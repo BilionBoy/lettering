@@ -1,0 +1,343 @@
+/* Global Styles */
+:root {
+  --primary: #ff3d7f;
+  --primary-light: #ff6b9c;
+  --primary-dark: #e31b5f;
+  --primary-gradient: linear-gradient(135deg, #ff3d7f 0%, #ff2d92 100%);
+  --secondary: #9c27b0;
+  --dark: #1a1a2e;
+  --light: #ffffff;
+  --gray: #8a8a8a;
+  --gray-light: #f8f9fa;
+  --gray-dark: #343a40;
+  --success: #28a745;
+  --pink: #ff3e96;
+  --brown: #6d4c41;
+  --green: #2e8b57;
+  --light-gray: #f8f8f8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --shadow: 0 10px 30px rgba(255, 61, 127, 0.1);
+  --shadow-dark: 0 15px 40px rgba(26, 26, 46, 0.1);
+  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --border-radius: 16px;
+  --border-radius-sm: 8px;
+  --font-primary: "Montserrat", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  --font-accent: "Cormorant Garamond", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  background-image: url("/placeholder.svg?height=1200&width=1200");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Logo */
+.logo-img {
+  width: 200px;
+  height: auto;
+}
+
+/* Navigation */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 15px 0;
+}
+
+.navbar-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.navbar-nav .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 1rem;
+  right: 1rem;
+  height: 3px;
+  background-color: var(--pink);
+}
+
+/* WhatsApp Button */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+#hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: var(--light);
+  overflow: hidden;
+  padding: 180px 0 100px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: var(--dark);
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--gray);
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.highlight {
+  color: var(--primary);
+  position: relative;
+  z-index: 1;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 61, 127, 0.2);
+  z-index: -1;
+}
+
+.btn-hero-primary {
+  display: inline-block;
+  padding: 15px 40px;
+  background: var(--primary-gradient);
+  border-radius: 50px;
+  color: var(--light);
+  font-weight: 600;
+  transition: var(--transition);
+  box-shadow: 0 10px 20px rgba(255, 61, 127, 0.2);
+}
+
+.btn-hero-primary:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 61, 127, 0.3);
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+  position: relative;
+  padding: 0;
+  z-index: 2;
+  width: 150%;
+  margin-left: -25%;
+  margin-top: -50px;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
+}
+
+/* Animações */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.decorative-icon,
+.floating-element-1,
+.floating-element-2 {
+  position: absolute;
+  z-index: 3;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-element-1 {
+  top: -50px;
+  right: -30px;
+}
+
+/* Shape Divider */
+.hero-shape-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.hero-shape-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.hero-shape-divider .shape-fill {
+  fill: rgba(248, 249, 250, 0.8);
+}
+
+/* Preview Section */
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.feature-card {
+  border: 2px dashed var(--primary);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.feature-card.bg-primary {
+  color: var(--light);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+}
+
+.feature-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-image img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: var(--light);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: var(--transition);
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  .section-title,
+  .cta-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-image-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .btn-hero-secondary {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}

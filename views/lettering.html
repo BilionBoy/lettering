@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual de Lettering Digital</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      :root {
+        --pink: #ff3e96;
+        --brown: #6d4c41;
+        --green: #2e8b57;
+        --light-gray: #f8f8f8;
+      }
+      
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #fff;
+        overflow-x: hidden;
+        background-image: url("/placeholder.svg?height=1200&width=1200");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
+      .main-container {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      /* Logo Styling */
+      .logo {
+        text-align: center;
+        line-height: 1;
+        margin-right: 20px;
+      }
+
+      .logo-text {
+        font-weight: 700;
+        color: var(--brown);
+        font-size: 1rem;
+        letter-spacing: 1px;
+      }
+
+      .logo-script {
+        font-family: "Dancing Script", cursive;
+        color: var(--pink);
+        font-size: 1.8rem;
+        margin-top: -5px;
+      }
+
+      .logo-subtext {
+        font-size: 0.7rem;
+        color: var(--brown);
+        margin-top: -5px;
+      }
+
+      /* Navigation */
+      .navbar {
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 15px 0;
+      }
+
+      .navbar-nav .nav-link {
+        color: #333;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        position: relative;
+      }
+
+      .navbar-nav .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 1rem;
+        right: 1rem;
+        height: 3px;
+        background-color: var(--pink);
+      }
+
+      .btn-whatsapp {
+        background-color: #25d366;
+        color: white;
+        border-radius: 30px;
+        padding: 8px 20px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-whatsapp:hover {
+        background-color: #128c7e;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Hero Section */
+      .hero-section {
+        padding: 60px 0;
+        min-height: calc(100vh - 100px);
+      }
+
+      .hero-text {
+        padding-right: 30px;
+      }
+
+      .main-heading {
+        color: var(--pink);
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        margin-bottom: 25px;
+      }
+
+      .hero-description {
+        color: #555;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+      }
+
+      .btn-cta {
+        background-color: var(--green);
+        color: white;
+        border-radius: 30px;
+        padding: 12px 30px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        border: 2px dashed rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-cta:hover {
+        background-color: #1e6e3c;
+        color: white;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      .hero-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 991.98px) {
+        .hero-text {
+          padding-right: 0;
+          text-align: center;
+          margin-bottom: 40px;
+        }
+
+        .main-heading {
+          font-size: 2rem;
+        }
+
+        .navbar-collapse {
+          background-color: white;
+          padding: 15px;
+          border-radius: 10px;
+          margin-top: 10px;
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-whatsapp {
+          margin-top: 15px;
+          display: block;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 767.98px) {
+        .main-heading {
+          font-size: 1.8rem;
+        }
+
+        .hero-description {
+          font-size: 1rem;
+        }
+
+        .hero-section {
+          padding: 40px 0;
+        }
+      }
+    </style>
+    <div class="container-fluid p-0 main-container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <div class="logo">
+                <div class="logo-text">MANUAL DE</div>
+                <div class="logo-script">Lettering Digital</div>
+                <div class="logo-subtext">& Resumos criativos</div>
+              </div>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sobre o Manual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Quero meu Manual</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Depoimentos</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> Falar via whatsapp
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row hero-section align-items-center">
+            <div class="col-lg-6 hero-text">
+              <h1 class="main-heading">
+                O Manual Completo de Lettering Digital: crie anotações bonitas e
+                criativas em todos os dispositivos!
+              </h1>
+
+              <p class="hero-description">
+                Aprenda a criar resumos incríveis e títulos criativos com o
+                Manual do Lettering Digital. Compatível com todos os
+                dispositivos, domine a arte da caligrafia digital e leve suas
+                anotações para o próximo nível!
+              </p>
+
+              <a href="#" class="btn btn-cta">Quero meu manual agora</a>
+            </div>
+            <div class="col-lg-6 hero-image">
+              <img
+                src="/placeholder.svg?height=600&width=600"
+                alt="Manual de Lettering Digital em um tablet"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
