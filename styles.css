@@ -278,6 +278,127 @@ body {
   object-fit: contain;
 }
 
+/* Bônus Section */
+
+.bonus-section {
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bonus-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.bonus-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px; /* Altura fixa para cards mais retangulares */
+}
+
+.bonus-image {
+  height: 200px; /* Aumentado para imagens maiores */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  background-color: #f8f5f9;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.bonus-image:hover {
+  transform: scale(1.02);
+}
+
+.bonus-image img {
+  max-height: 180px; /* Aumentado para imagens maiores */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.bonus-card-title {
+  color: #b81b7f;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.bonus-card-text {
+  color: #444;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 15px;
+  line-height: 1.6;
+  flex-grow: 1; /* Permite que o texto ocupe o espaço disponível */
+}
+
+.cta-button {
+  background-color: white;
+  color: #b81b7f;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: 700;
+  margin-top: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  background-color: #f8f8f8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.row {
+  margin: 0 -20px;
+}
+
+.col-md-4 {
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .bonus-title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .bonus-card {
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
 /* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
