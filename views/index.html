@@ -14,6 +14,10 @@
     />
     <link rel="stylesheet" href="/styles.css" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
@@ -146,6 +150,7 @@
           </svg>
         </div>
       </section>
+
       <!-- Seção de Preview -->
       <section class="py-5">
         <div class="container">
@@ -160,7 +165,124 @@
             </p>
           </div>
 
-          <div class="row g-4">
+          <!-- Swiper Container para Mobile -->
+          <div class="swiper-container d-block d-md-none">
+            <div class="swiper-wrapper">
+              <!-- Card 1 -->
+              <div class="swiper-slide">
+                <div class="feature-card bg-primary text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card1.png"
+                      alt="Compatibilidade universal"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">Compatibilidade universal</h3>
+                  <p>
+                    Agora, disponível para TODOS os dispositivos! Use o manual
+                    no Samsung Notes, GoodNotes, Notability, Penup, Notα+ e
+                    outros.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="swiper-slide">
+                <div class="feature-card text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card2.png"
+                      alt="Aprendizado prático e visual"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">Aprendizado prático e visual</h3>
+                  <p>
+                    Passo a passo detalhado para aprender caligrafia digital de
+                    forma prática, com exercícios para treinar diretamente no
+                    seu dispositivo.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="swiper-slide">
+                <div class="feature-card bg-primary text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card3.png"
+                      alt="Técnicas de Caligrafia Digital"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">Técnicas de Caligrafia Digital</h3>
+                  <p>
+                    Domine técnicas como Brush Lettering, letra bastão, cursiva
+                    digital e muito mais. Crie títulos bonitos e resumos
+                    organizados.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="swiper-slide">
+                <div class="feature-card text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card4.png"
+                      alt="Exercícios Exclusivos"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">Exercícios Exclusivos</h3>
+                  <p>
+                    Inclui folhas de treino com alfabetos completos, modelos de
+                    títulos e exercícios para resumos criativos.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 5 -->
+              <div class="swiper-slide">
+                <div class="feature-card bg-primary text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card5.png"
+                      alt="Dicas para Resumos Criativos"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">Dicas para Resumos Criativos</h3>
+                  <p>
+                    Aprenda a organizar resumos usando paletas de cores, códigos
+                    visuais e layouts funcionais que facilitam o estudo.
+                  </p>
+                </div>
+              </div>
+              <!-- Card 6 -->
+              <div class="swiper-slide">
+                <div class="feature-card text-center">
+                  <div class="feature-image">
+                    <img
+                      src="/img/card6.png"
+                      alt="Modelos de Alfabetos para Títulos e Subtítulos"
+                      class="img-fluid rounded-3"
+                    />
+                  </div>
+                  <h3 class="mt-4 mb-3">
+                    Modelos de Alfabetos para Títulos e Subtítulos
+                  </h3>
+                  <p>
+                    Explore diferentes estilos de alfabetos para criar títulos
+                    impactantes e subtítulos harmoniosos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Layout original para telas maiores -->
+          <div class="row g-4 d-none d-md-flex">
             <!-- Card 1 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card bg-primary text-center h-100">
@@ -178,6 +300,7 @@
                 </p>
               </div>
             </div>
+            <!-- Card 2 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card text-center h-100">
                 <div class="feature-image">
@@ -195,6 +318,7 @@
                 </p>
               </div>
             </div>
+            <!-- Card 3 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card bg-primary text-center h-100">
                 <div class="feature-image">
@@ -212,6 +336,7 @@
                 </p>
               </div>
             </div>
+            <!-- Card 4 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card text-center h-100">
                 <div class="feature-image">
@@ -228,7 +353,6 @@
                 </p>
               </div>
             </div>
-
             <!-- Card 5 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card bg-primary text-center h-100">
@@ -246,7 +370,6 @@
                 </p>
               </div>
             </div>
-
             <!-- Card 6 -->
             <div class="col-md-6 col-lg-4">
               <div class="feature-card text-center h-100">
@@ -405,7 +528,20 @@
     <a href="#" class="whatsapp-float">
       <i class="fab fa-whatsapp"></i>
     </a>
-
+    <!-- Scripts do Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Swiper(".swiper-container", {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
