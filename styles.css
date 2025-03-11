@@ -143,7 +143,6 @@ body {
 @media (max-width: 767px) {
   #hero {
     padding: 40px 0;
-    min-height: 100vh;
   }
 }
 
@@ -206,23 +205,6 @@ body {
   .hero-subtitle {
     font-size: 1rem;
     text-align: center;
-  }
-}
-
-.hero-mobile-text {
-  display: none;
-  color: #8b0000;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .hero-mobile-text {
-    display: block;
-    padding: 0 15px;
   }
 }
 
@@ -696,7 +678,7 @@ body {
     padding: 40px 0;
     text-align: center;
   }
-  
+
   .about-section img {
     margin-bottom: 20px;
   }
@@ -763,161 +745,73 @@ body {
 }
 
 /* Depoimentos */
-
-/* Testimonials Section */
-.testimonial-container {
-  background-color: var(--light);
-  border-radius: var(--border-radius);
-  padding: 50px;
-  box-shadow: var(--shadow);
-}
-
-@media (max-width: 767px) {
-  .testimonial-container {
-    padding: 25px 15px;
-  }
-}
-
-.testimonial-image-container {
-  position: relative;
-  height: 350px;
-  border-radius: var(--border-radius);
-  overflow: hidden;
-}
-
-@media (max-width: 767px) {
-  .testimonial-image-container {
-    height: 250px;
-    margin-bottom: 20px;
-  }
-}
-
-.testimonial-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.testimonial-card {
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 30px;
   height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  display: none;
+  text-align: center;
 }
 
-.testimonial-image.active {
-  opacity: 1;
-  display: block;
+.stars {
+  color: #ffd700;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
-.testimonial-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+h6 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
-
-.testimonial-content {
-  display: none;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.testimonial-content.active {
-  display: block;
-  opacity: 1;
-}
-
-.testimonial-quote {
-  font-size: 2.5rem;
-  color: var(--primary-light);
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
   margin-bottom: 20px;
 }
 
-@media (max-width: 767px) {
-  .testimonial-quote {
-    font-size: 2rem;
-    margin-bottom: 15px;
+.testimonial-name {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.joao {
+  color: #9c27b0;
+}
+
+.maria {
+  color: #9c27b0;
+}
+
+.miguel {
+  color: #9c27b0;
+}
+
+.carousel-indicators {
+  position: static;
+  margin-top: 30px;
+}
+
+.carousel-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+}
+
+.carousel-indicators button.active {
+  background-color: #666;
+}
+@media (max-width: 768px) {
+  .testimonial-container {
+    flex-direction: column;
   }
-}
 
-.testimonial-text {
-  font-size: 1.1rem;
-  font-style: italic;
-  margin-bottom: 30px;
-}
-
-@media (max-width: 767px) {
-  .testimonial-text {
-    font-size: 1rem;
+  .testimonial-card {
     margin-bottom: 20px;
   }
-}
-
-.testimonial-author {
-  display: flex;
-  align-items: center;
-}
-
-@media (max-width: 767px) {
-  .testimonial-author {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-.testimonial-author-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 15px;
-  border: 3px solid var(--primary);
-}
-
-@media (max-width: 767px) {
-  .testimonial-author-image {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
-}
-
-.testimonial-author-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.testimonial-author-info h5 {
-  font-size: 1.1rem;
-  margin-bottom: 5px;
-}
-
-.testimonial-author-info p {
-  font-size: 0.9rem;
-  color: var(--gray);
-  margin-bottom: 0;
-}
-
-.testimonial-nav {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-  justify-content: center;
-}
-
-.testimonial-nav-btn {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: rgba(255, 61, 127, 0.2);
-  margin-right: 10px;
-  border: none;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.testimonial-nav-btn.active {
-  background-color: var(--primary);
-  transform: scale(1.2);
 }
 
 /* FAQ Section */
@@ -955,7 +849,7 @@ body {
     padding: 12px 15px;
     font-size: 0.95rem;
   }
-  
+
   .accordion-body {
     padding: 12px 15px;
     font-size: 0.9rem;
