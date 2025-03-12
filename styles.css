@@ -481,8 +481,14 @@ body {
 }
 
 /* Swiper Styles */
+
+.swiper-slide {
+  width: 100% !important;
+}
 .swiper-container {
   padding-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .swiper-pagination {
