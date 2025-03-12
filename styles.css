@@ -60,15 +60,25 @@ body {
     width: 150px;
   }
 }
-
+x
 /* Navigation */
 .navbar {
+  background-color: #aa1f7c !important;
   padding: 10px 0;
+}
+.navbar.scrolled {
+  position: fixed; /* Fixa a navbar ao rolar */
+  background-color: #b81b7f !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  opacity: 99%;
 }
 
 .navbar-nav .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat, sans-serif";
+  font-family: "monospace";
   color: #ffffff;
   font-weight: 800;
   padding: 0.5rem 1rem;
@@ -148,6 +158,7 @@ body {
 }
 
 .hero-background {
+  opacity: 99%;
   position: absolute;
   top: 0;
   left: 0;
@@ -176,7 +187,7 @@ body {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #333;
+  color: #ffffff;
   position: relative;
   z-index: 2;
 }
@@ -197,7 +208,7 @@ body {
 .hero-subtitle {
   font-size: 1.25rem;
   margin-bottom: 2rem;
-  color: #555;
+  color: #fffdfd;
   position: relative;
   z-index: 2;
 }
@@ -210,7 +221,7 @@ body {
 }
 
 .highlight {
-  color: #ff4088;
+  color: #491c2d;
   font-weight: 700;
 }
 
