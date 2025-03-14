@@ -922,3 +922,132 @@ h6 {
     font-size: 1rem;
   }
 }
+
+/* Footer */
+
+.faq-section {
+  background-color: #b81b7f;
+  padding: 60px 0;
+  color: white;
+}
+
+.accordion-item {
+  margin-bottom: 10px;
+  border: none;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+}
+
+.accordion-button {
+  background-color: var(--light);
+  color: var(--dark);
+  font-weight: 600;
+  padding: 15px 20px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(255, 61, 127, 0.1);
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e91e63'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-body {
+  background-color: var(--light);
+  padding: 15px 20px;
+}
+
+.contact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.contact-text {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: var(--transition);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128c7e;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.social-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e91e63;
+  font-size: 1.5rem;
+  transition: var(--transition);
+}
+#footer-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
