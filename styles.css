@@ -421,46 +421,70 @@ body {
 }
 
 .section-title {
+  font-family: "Playfair Display", serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--primary);
 }
 
-@media (max-width: 767px) {
-  .section-title {
-    font-size: 2rem;
-  }
-}
-
+/* Ajuste no layout das colunas */
 .feature-card {
   border: 2px dashed var(--primary);
-  border-radius: var(--border-radius);
-  padding: 2rem;
+  border-radius: 1rem;
+  padding: 1.5rem; /* Menos padding para cards mais compactos */
   height: 100%;
-  transition: var(--transition);
-  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  margin-bottom: 1.5rem; /* Maior espaçamento entre cards */
+  background-color: var(--light);
+  text-align: center;
+  font-family: "Playfair Display", serif;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow);
+  transform: translateY(-5px); /* Transição mais suave */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
 }
 
 .feature-card.bg-primary {
   color: var(--light);
 }
 
+/* Tamanho da fonte */
 .feature-card h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 1.5rem 0 1rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.25rem; /* Reduzido para melhorar a hierarquia */
+  font-weight: 600; /* Peso de fonte mais leve */
+  margin: 1rem 0 0.5rem; /* Menos espaçamento para uma melhor organização */
 }
 
-@media (max-width: 767px) {
-  .feature-card h3 {
-    font-size: 1.3rem;
-  }
+.feature-card img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.feature-image img {
+  border-radius: 1rem;
+  max-height: 180px; /* Reduzido para evitar exageros */
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem; /* Espaço entre imagem e texto */
+}
+
+.feature-card:hover .feature-image img {
+  transform: scale(1.05);
+}
+
+.feature-image {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-card:hover .feature-image img {
+  transform: scale(1.05);
 }
 
 .feature-card p {
@@ -480,33 +504,33 @@ body {
   object-fit: contain;
 }
 
-/* Swiper Styles */
+/* Ajustes para diferentes tamanhos de tela */
+@media (max-width: 767px) {
+  .feature-card {
+    padding: 1rem; /* Menos padding em dispositivos pequenos */
+  }
 
-.swiper-slide {
-  width: 100% !important;
-}
-.swiper-container {
-  padding-bottom: 40px;
-  width: 100%;
-  overflow: hidden;
-}
+  .feature-card h3 {
+    font-size: 1.1rem; /* Fonte reduzida em telas pequenas */
+  }
 
-.swiper-pagination {
-  bottom: 0;
-}
+  .section-title {
+    font-size: 1.8rem; /* Tamanho ajustado */
+  }
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: var(--primary-light);
-  opacity: 0.5;
-}
+  .feature-card p {
+    font-size: 0.9rem; /* Texto mais compacto para dispositivos pequenos */
+  }
 
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: var(--primary);
+  .feature-image img {
+    max-height: 150px; /* Tamanho da imagem reduzido */
+  }
 }
-
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
 /* Bônus Section */
 
 .bonus-section {

@@ -57,7 +57,21 @@
 
     <!-- SEO: Canonical URL para evitar conteúdo duplicado -->
     <link rel="canonical" href="https://manuallettering.com" />
-
+    <!-- CSS do Slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Nunito:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- SEO: Adicionar meta tags de idioma e região -->
     <meta property="og:locale" content="pt_BR" />
 
@@ -269,13 +283,12 @@
             </svg>
           </div>
         </section>
-
         <!-- Seção de Preview -->
         <section class="py-5" id="beneficios">
           <div class="container">
             <div class="text-center mb-5">
               <h2 class="section-title">Manual do Lettering Digital</h2>
-              <p class="mx-auto" style="max-width: 800px">
+              <p class="mx-auto" style="max-width: 800px; font-family: 'Nunito', sans-serif;">
                 Este Manual foi especialmente criado para ajudar estudantes e
                 profissionais a melhorar sua escrita digital em qualquer
                 dispositivo. Com o "Manual do Lettering Digital", você aprenderá
@@ -284,12 +297,12 @@
               </p>
             </div>
 
-            <!-- Swiper Container para Mobile -->
-            <div class="swiper-container d-block d-md-none">
-              <div class="swiper-wrapper">
+            <!-- Carrossel para dispositivos móveis -->
+            <div class="row g-4 d-md-none">
+              <div class="slick-carousel">
                 <!-- Card 1 -->
-                <div class="swiper-slide">
-                  <div class="feature-card bg-primary text-center">
+                <div class="col-12">
+                  <div class="feature-card bg-primary text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card1.png"
@@ -308,9 +321,10 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- Card 2 -->
-                <div class="swiper-slide">
-                  <div class="feature-card text-center">
+                <div class="col-12">
+                  <div class="feature-card text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card2.png"
@@ -329,9 +343,10 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- Card 3 -->
-                <div class="swiper-slide">
-                  <div class="feature-card bg-primary text-center">
+                <div class="col-12">
+                  <div class="feature-card bg-primary text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card3.png"
@@ -350,9 +365,10 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- Card 4 -->
-                <div class="swiper-slide">
-                  <div class="feature-card text-center">
+                <div class="col-12">
+                  <div class="feature-card text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card4.png"
@@ -370,9 +386,10 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- Card 5 -->
-                <div class="swiper-slide">
-                  <div class="feature-card bg-primary text-center">
+                <div class="col-12">
+                  <div class="feature-card bg-primary text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card5.png"
@@ -391,9 +408,10 @@
                     </p>
                   </div>
                 </div>
+
                 <!-- Card 6 -->
-                <div class="swiper-slide">
-                  <div class="feature-card text-center">
+                <div class="col-12">
+                  <div class="feature-card text-center h-100">
                     <div class="feature-image">
                       <img
                         src="/card6.png"
@@ -414,12 +432,9 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Paginação -->
-              <div class="swiper-pagination"></div>
             </div>
 
-            <!-- Layout original para telas maiores -->
+            <!-- Layout original para telas maiores (PC) -->
             <div class="row g-4 d-none d-md-flex">
               <!-- Card 1 -->
               <div class="col-md-6 col-lg-4">
@@ -442,6 +457,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Card 2 -->
               <div class="col-md-6 col-lg-4">
                 <div class="feature-card text-center h-100">
@@ -463,6 +479,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Card 3 -->
               <div class="col-md-6 col-lg-4">
                 <div class="feature-card bg-primary text-center h-100">
@@ -484,6 +501,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Card 4 -->
               <div class="col-md-6 col-lg-4">
                 <div class="feature-card text-center h-100">
@@ -504,6 +522,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Card 5 -->
               <div class="col-md-6 col-lg-4">
                 <div class="feature-card bg-primary text-center h-100">
@@ -524,6 +543,7 @@
                   </p>
                 </div>
               </div>
+
               <!-- Card 6 -->
               <div class="col-md-6 col-lg-4">
                 <div class="feature-card text-center h-100">
@@ -888,25 +908,13 @@
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
-
+    <!-- JS do Slick -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <!-- Scripts do Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const swiper = new Swiper(".swiper-container", {
-          slidesPerView: 5,
-          spaceBetween: 20,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          autoplay: {
-            delay: 1000,
-            disableOnInteraction: false,
-          },
-          loop: true,
-        });
-
         const testimonialBtns = document.querySelectorAll(
           ".testimonial-nav-btn"
         );
@@ -932,6 +940,17 @@
               .getElementById(`testimonial-image-${testimonialNum}`)
               .classList.add("active");
           });
+        });
+      });
+
+      $(document).ready(function () {
+        $(".slick-carousel").slick({
+          dots: true,
+          arrows: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
         });
       });
     </script>
