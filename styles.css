@@ -940,7 +940,7 @@ h6 {
 
 .accordion-button {
   background-color: var(--light);
-  color: var(--dark);
+  color: #b81b7f;
   font-weight: 600;
   padding: 15px 20px;
   box-shadow: var(--shadow);
@@ -949,7 +949,7 @@ h6 {
 
 .accordion-button:not(.collapsed) {
   background-color: var(--light);
-  color: var(--primary);
+  color: #b81b7f;
 }
 
 .accordion-button:focus {
